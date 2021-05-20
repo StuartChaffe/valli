@@ -4,7 +4,7 @@
   --display-family: "mr-eaves-modern", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-size: calc(1rem + 0.15vw);
   --font-size-lead: calc(1.2rem + 0.1vw);
-  --font-size-small: calc(0.9rem + 0.1vw);
+  --font-size-small: calc(0.7rem + 0.1vw);
   --font-size-h1: calc(2rem + 0.2vw);
   --font-size-h2: calc(1.8rem + 0.2vw);
   --font-size-h3: calc(1.5rem + 0.2vw);
@@ -17,6 +17,7 @@
   --font-weight-heavy: var(--font-weight-bold);
   --line-height: 1.5;
   --line-height-headings: 1.2;
+  --color-black: #161615;
   --color-grey-dark: #5D5C5C;
   --color-grey-mid: #989086;
   --color-grey: #D1C4BA;
@@ -24,7 +25,7 @@
   --color-primary: #2A9448;
   --color-primary-light: #CDDC9A;
   --color-primary-dark: #175D2E;
-  --color-text-base: #161615;
+  --color-text-base: var(--color-black);
   --color-text-dark: #181822;
   --color-text-reversed: #fff;
   --color-text-link: var(--color-primary);
@@ -42,9 +43,9 @@
   --spacing: 1em;
   --spacing-s: 0.5em;
   --spacing-xs: 0.25em;
-  --container-width: 75rem;
-  --container-width-l: 100rem;
-  --content-width: 50rem;
+  --container-width: 1280px;
+  --container-width-l: 1600px;
+  --content-width: 860px;
 }
 @media (min-width: 70em) {
   :root {
@@ -391,11 +392,18 @@ input[type=button]:focus {
   min-height: 100%;
 }
 
-.container, .global-footer__inner, .global-header__inner, .main {
+.container, .main {
   margin: 0 auto;
   padding: 0 1em;
   width: 100%;
   max-width: var(--container-width);
+}
+
+.container--large, .global-footer__inner, .global-header__inner {
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+  max-width: var(--container-width-l);
 }
 
 .main {
@@ -595,7 +603,7 @@ input[type=button]:focus {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
@@ -646,7 +654,7 @@ input[type=button]:focus {
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 5px;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 .global-header__nav .menu li a:hover {
   text-decoration: none;
@@ -701,15 +709,69 @@ body.nav-open {
 
 .global-footer {
   margin-top: auto;
-  text-align: center;
-  background-color: var(--color-primary);
+  background-color: var(--color-black);
   padding: var(--spacing);
+  font-size: var(--font-size-small);
+}
+.global-footer p {
+  font-size: var(--font-size-small);
+}
+
+.global-footer__logo {
+  width: 71px;
+  height: 100px;
+  margin: 2rem auto;
 }
 
 .global-footer__inner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+}
+
+.global-footer__locations {
+  display: flex;
+}
+.global-footer__locations ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.global-footer__locations ul li {
+  display: none;
+  width: calc(100% / 7);
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 70em) {
+  .global-footer__locations ul li {
+    display: block;
+    width: calc(100% / 7);
+  }
+}
+.global-footer__locations a {
+  color: white;
+  text-decoration: none;
+}
+.global-footer__locations a:hover {
+  text-decoration: underline;
+}
+
+.global-footer__copy {
+  text-align: center;
+  margin: 1rem 0;
+}
+.global-footer__copy ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.global-footer__copy ul li {
+  margin: 1rem;
+}
+.global-footer__copy ul li a {
+  color: white;
+  text-decoration: underline;
 }
 
 .global-footer p {

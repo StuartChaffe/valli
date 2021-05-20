@@ -4,7 +4,7 @@
 
 	--font-size: calc(1rem + 0.15vw);
 	--font-size-lead: calc(1.2rem + 0.1vw);
-	--font-size-small: calc(0.9rem + 0.1vw);
+	--font-size-small: calc(0.7rem + 0.1vw);
 	--font-size-h1: calc(2rem + 0.2vw);
 	--font-size-h2: calc(1.8rem + 0.2vw);
 	--font-size-h3: calc(1.5rem + 0.2vw);
@@ -20,6 +20,7 @@
 	--line-height: 1.5;
 	--line-height-headings: 1.2;
 
+	--color-black: #161615;
 	--color-grey-dark: #5D5C5C;
 	--color-grey-mid: #989086;
 	--color-grey: #D1C4BA;
@@ -33,7 +34,7 @@
 	--color-primary-light: #CDDC9A;
 	--color-primary-dark: #175D2E;
 
-	--color-text-base: #161615;
+	--color-text-base: var(--color-black);
 	--color-text-dark: #181822;
 	--color-text-reversed: #fff;
 	--color-text-link: var(--color-primary);
@@ -56,9 +57,9 @@
 	--spacing-s: 0.5em;
 	--spacing-xs: 0.25em;
 
-	--container-width: 75rem;
-	--container-width-l: 100rem;
-	--content-width: 50rem;
+	--container-width: 1280px;
+	--container-width-l: 1600px;
+	--content-width: 860px;
 
 	@include mq(large) {
 		--font-size-h1: calc(3.5rem + 0.2vw);
