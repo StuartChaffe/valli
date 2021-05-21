@@ -1,0 +1,44 @@
+.subscribe {
+	background-color: var(--color-primary);
+	position: relative;
+	overflow: hidden;
+	.shape-1 {
+		position: absolute;
+		height: 100%;
+		@include mq(medium) {
+			width: 20%;
+		}
+	}
+	.shape-2 {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		right: 0;
+	}
+	&__inner {
+		padding: var(--spacing-xxl) 1em;
+		position: relative;
+		@extend .container--small;
+		max-width: 800px;
+		z-index: 2;
+		h2, h3, h4, h5 {
+			color: white;
+			margin-bottom: 1.5rem;
+		}
+		p {
+			font-size: var(--font-size-small);
+			color: white;
+			width: 100%;
+			margin-top: 1.5rem;
+			@include mq(medium) {
+				width: 60%;
+			}
+		}
+	}
+	input[type="submit"] {
+		position: absolute;
+		right: 1rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

@@ -1,7 +1,7 @@
 .global-footer {
 	margin-top: auto;
 	background-color: var(--color-black);
-	padding: var(--spacing);
+	padding: var(--spacing-xxl);
 	font-size: var(--font-size-small);
 	p {
 		font-size: var(--font-size-small);
@@ -11,7 +11,8 @@
 .global-footer__logo {
 	width: 71px;
 	height: 100px;
-	margin: 2rem auto;
+	margin: var(--spacing-xl) auto;
+	margin-bottom: var(--spacing-xxl);
 }
 
 .global-footer__inner {

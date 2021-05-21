@@ -1,0 +1,46 @@
+.image-text{
+	display: flex;
+	flex-direction: column;
+	@include mq(medium) {
+		flex-direction: row;
+	}
+	&__image {
+		width: 100%;
+		@include mq(medium) {
+			width: 50%;
+		}
+	}
+	&__text {
+		width: 100%;
+		padding: var(--spacing-xl);
+		// max-width: 800px;
+		background-image: url('../images/samples/block-bkg-light.png');
+		background-size: cover;
+		background-position: center center;
+		background-color: white;
+		@include mq(medium) {
+			width: 50%;
+			padding: var(--spacing-xl);
+		}
+		@include mq(large) {
+			padding: var(--spacing-xxl);
+		}
+		&-content {
+			padding-right: var(--spacing-xxl);
+		}
+	}
+	p {
+		margin-bottom: var(--spacing-xl);
+		+ .stats {
+			margin-top: var(--spacing-xl);
+		}
+	}
+	.stats {
+		margin-top: var(--spacing-xxl);
+		&-item {
+			&__number {
+				border: 3px solid white;
+			}
+		}
+	}
+}

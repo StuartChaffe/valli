@@ -4,18 +4,18 @@
   --font-size: calc(1rem + 0.15vw);
   --font-size-lead: calc(1.2rem + 0.1vw);
   --font-size-small: calc(0.7rem + 0.1vw);
-  --font-size-h1: calc(2rem + 0.2vw);
+  --font-size-h1: calc(2.4rem + 0.2vw);
   --font-size-h2: calc(1.8rem + 0.2vw);
   --font-size-h3: calc(1.5rem + 0.2vw);
-  --font-size-h4: calc(1.3rem + 0.2vw);
+  --font-size-h4: calc(1.6rem + 0.2vw);
   --font-size-h5: calc(1.2rem + 0.2vw);
   --font-weight-light: 100;
-  --font-weight-normal: 400;
-  --font-weight-bold: 600;
+  --font-weight-normal: 300;
+  --font-weight-bold: 700;
   --font-weight-heavy: 900;
   --font-weight-heavy: var(--font-weight-bold);
   --line-height: 1.5;
-  --line-height-headings: 1.2;
+  --line-height-headings: 1;
   --color-black: #161615;
   --color-grey-dark: #5D5C5C;
   --color-grey-mid: #989086;
@@ -24,7 +24,8 @@
   --color-primary: #2A9448;
   --color-primary-light: #CDDC9A;
   --color-primary-dark: #175D2E;
-  --color-text-base: var(--color-black);
+  --heading-color: var(--color-primary-dark);
+  --color-text-base: var(--color-grey-dark);
   --color-text-dark: #181822;
   --color-text-reversed: #fff;
   --color-text-link: var(--color-primary);
@@ -36,7 +37,7 @@
   --color-linkedin: #0077B5;
   --body-background-color: #fff;
   --border-radius: 16px;
-  --spacing-xxl: 3em;
+  --spacing-xxl: 4em;
   --spacing-xl: 2em;
   --spacing-l: 1.5em;
   --spacing: 1em;
@@ -51,7 +52,7 @@
     --font-size-h1: calc(3.5rem + 0.2vw);
     --font-size-h2: calc(2rem + 0.2vw);
     --font-size-h3: calc(1.6rem + 0.2vw);
-    --font-size-h4: calc(1.4rem + 0.2vw);
+    --font-size-h4: calc(2rem + 0.2vw);
     --font-size-h5: calc(1.2rem + 0.2vw);
   }
 }

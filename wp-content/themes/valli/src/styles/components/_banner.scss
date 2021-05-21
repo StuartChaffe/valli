@@ -1,0 +1,32 @@
+.banner {
+	// background: red;
+	background-size: cover;
+	background-position: center center;
+	padding: var(--spacing-xxl) 1em;
+	&--dark {
+		color: white;
+		h1, h2, h3, h4, h5, p {
+			color: white;
+		}
+	}
+	&__inner {
+		@extend .container;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 50%;
+		margin: 0 auto;
+		&--icon {
+			max-width: 180px;
+			margin: 0 auto 2rem auto;
+		}
+	}
+	.stats {
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		padding-top: var(--spacing-xl);
+		margin-top: var(--spacing-xl);
+		justify-content: center;
+	}
+}
