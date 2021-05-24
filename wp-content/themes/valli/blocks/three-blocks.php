@@ -1,4 +1,4 @@
-<div class="three-blocks">
+<section class="three-blocks">
 	<div class="three-blocks-item">
 		<h3 class="color-black">Our services</h3>
 		<div class="three-blocks__services">
@@ -34,7 +34,7 @@
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-audio.svg" alt="Alt tag" />
 		</div>
 		<h3 class="heading-1 color-black">Essential hearing care services</h3>
-		<a href="" class="btn btn--dark">Read about our brands</a>
+		<a href="" class="btn btn--dark">View our hearing services</a>
 	</div>
 	<div class="three-blocks-item">
 		<h3 class="color-black">Our brands</h3>
@@ -60,4 +60,4 @@
 		</div>
 		<a href="" class="btn btn--primary">Read about our brands</a>
 	</div>
-</div>
+</section>

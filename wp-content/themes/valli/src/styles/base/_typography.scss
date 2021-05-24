@@ -59,9 +59,11 @@ h5 {
 	font-family: var(--display-family);
 }
 .color-black {
-	color: var(--color-text-base);
+	color: var(--color-black);
 }
-
+.color-white {
+	color: white;
+}
 
 h1, .heading-1 { font-size: var(--font-size-h1); }
 h2, .heading-2 { font-size: var(--font-size-h2); }

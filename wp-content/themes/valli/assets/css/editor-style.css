@@ -50,7 +50,7 @@
 @media (min-width: 70em) {
   :root {
     --font-size-h1: calc(3.5rem + 0.2vw);
-    --font-size-h2: calc(2rem + 0.2vw);
+    --font-size-h2: calc(2.5rem + 0.2vw);
     --font-size-h3: calc(1.6rem + 0.2vw);
     --font-size-h4: calc(2rem + 0.2vw);
     --font-size-h5: calc(1.2rem + 0.2vw);
@@ -215,7 +215,11 @@ h5 {
 }
 
 .color-black {
-  color: var(--color-text-base);
+  color: var(--color-black);
+}
+
+.color-white {
+  color: white;
 }
 
 h1, .heading-1 {

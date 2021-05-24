@@ -1,4 +1,4 @@
-<div class="image-text">
+<section class="image-text">
 	<div class="image-text__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/samples/banner-home.png')">
 		<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/samples/banner-home.png" alt="Alt tag" />
 	</div>
@@ -12,4 +12,4 @@
 
 		<?php include("stats.php"); ?>
 	</div>
-</div>
+</section>

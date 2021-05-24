@@ -2,18 +2,21 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: var(--spacing-xxl);
+	border-bottom: 1px solid var(--color-grey-light);
 	@include mq(medium) {
 		flex-direction: row;
 	}
 	&__image {
 		width: 100%;
+		display: none;
 		position: relative;
 		overflow: hidden;
 		background-size: cover;
 		background-position: center center;
 
-		@include mq(medium) {
+		@include mq(large) {
 			width: 50%;
+			display: block;
 		}
 
 		img {
@@ -35,10 +38,11 @@
 		background-position: center center;
 		background-color: white;
 		@include mq(medium) {
-			width: 50%;
+			width: 100%;
 			padding: var(--spacing-xl);
 		}
 		@include mq(large) {
+			width: 50%;
 			padding: var(--spacing-xxl);
 		}
 		&-content {
