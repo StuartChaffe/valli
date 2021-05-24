@@ -1,6 +1,6 @@
 <div class="image-text">
-	<div class="image-text__image">
-		image
+	<div class="image-text__image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/samples/banner-home.png')">
+		<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/samples/banner-home.png" alt="Alt tag" />
 	</div>
 	<div class="image-text__text">
 		<div class="image-text__text-content">
