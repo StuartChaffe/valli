@@ -1,14 +1,21 @@
 .stats {
 	display: flex;
 	align-items: center;
-
+	@include mq($until: medium) {
+		flex-wrap: wrap;
+	}
 	&-item {
 		display: flex;
 		font-style: italic;
 		font-family: var(--display-family);
-		margin-right: 2rem;
+		padding-right: 2rem;
+		@include mq($until: medium) {
+			width: 50%;
+			margin-bottom: 1rem;
+		}
 		&:last-child {
 			margin-right: 0;
+			margin-bottom: 0;
 		}
 		&__number {
 			display: flex;

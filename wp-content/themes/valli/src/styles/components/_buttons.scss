@@ -24,7 +24,10 @@
 	}
 
 	+ .btn {
-		margin-left: 1rem;
+		margin-top: 1rem;
+		@include mq(large) {
+			margin-left: 1rem;
+		}
 	}
 }
 

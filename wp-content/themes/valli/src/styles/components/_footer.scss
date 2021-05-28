@@ -3,6 +3,12 @@
 	background-color: var(--color-black);
 	padding: var(--spacing-xxl);
 	font-size: var(--font-size-small);
+	@include mq(large) {
+		padding: var(--spacing-xl);
+	}
+	@include mq(xlarge) {
+		padding: var(--spacing-xxl);
+	}
 	p {
 		font-size: var(--font-size-small);
 	}

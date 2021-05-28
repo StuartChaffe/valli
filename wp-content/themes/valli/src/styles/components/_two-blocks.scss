@@ -1,10 +1,14 @@
 .two-blocks {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: var(--spacing-xxl);
-	background-color: var(--color-grey-light);
+	flex-direction: column;
+	margin-bottom: var(--spacing-xl);
+	@include mq(medium) {
+		flex-direction: row;
+		background-color: var(--color-grey-light);
+		margin-bottom: var(--spacing-xxl);
+	}
 	&-item {
-		width: calc(100% / 2);
 		min-height: 420px;
 		padding: var(--spacing-xl);
 		display: flex;
@@ -13,13 +17,21 @@
 		justify-content: space-between;
 		background-size: cover;
 		background-position: center center;
+		margin-bottom: 1rem;
 		// .btn {
 		// 	margin-top: auto;
 		// }
-
-		h2, h3, h4, h5 {
-			// margin-top: 2rem;
+		@include mq(medium) {
+			width: calc(100% / 2);
+			margin-bottom: 0;
 		}
+
+		.heading-2  {
+			@include mq($until: large) {
+				// font-size: var(--font-size-h1);
+			}
+		}
+
 		&__logo {
 			width: 62px;
 		}

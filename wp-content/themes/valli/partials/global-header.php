@@ -1,10 +1,9 @@
 <header class="global-header">
 	<div class="global-header__inner">
 		<div class="global-header__top">
-			<div class="global-header__top--tel font-display"><p>Call today <span><a href="tel:01484 533730">01484 533730</a></span></p></div>
+			<div class="global-header__top--tel font-display"><a class="btn hidedesktop" href="tel:01484 533730">Call now</a><a class="hidemobile" href="tel:01484 533730"><p>Call today <span>01484 533730</span></p></a></div>
 			<h1 class="global-header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Valli Opticians Logo" /></a></h1>
-			<a href="" class="btn btn--primary">Book an appointment</a>
-			<button class="global-header__menu-btn" data-toggle="#mobile-menu" data-toggle-body-class="nav-open" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">Mobile Menu</button>
+			<a href="" class="btn btn--primary"><span class="hidedesktop">Book now</span> <span class="hidemobile">Book an appointment</span></a>
 		</div>
 		<nav class="global-header__nav">
 			<?php wp_nav_menu( array('theme_location' => 'primary', 'container'=> false, ) ); ?>
@@ -12,9 +11,23 @@
 	</div>
 </header>
 
-<div class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu">
 	<nav class="mobile-menu__nav">
-		<button class="mobile-menu__close-btn" data-toggle="#mobile-menu" data-toggle-body-class="nav-open" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">Close Menu</button>
-		<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
+		<button class="mobile-nav__btn" data-toggle="#mobile-menu" data-toggle-body-class="popover-active" aria-label="Toggle useful links menu" aria-expanded="false" aria-controls="mobile-popover-menu">
+			<span>Main menu</span>
+		</button>
+		<div class="popover-menu" id="mobile-menu">
+			<div class="popover-menu__inner">
+				<?php
+					wp_nav_menu(array(
+					'theme_location' => 'primary',
+					'container' => 'nav',
+					'container_class' => 'popover-menu__nav',
+					'menu_class' => 'popover-nav'
+				));
+				?>
+			</div>
+		</div>
 	</nav>
 </div>
+
