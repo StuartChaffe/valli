@@ -14,7 +14,7 @@
 <div class="mobile-menu">
 	<nav class="mobile-menu__nav">
 		<button class="mobile-nav__btn" data-toggle="#mobile-menu" data-toggle-body-class="popover-active" aria-label="Toggle useful links menu" aria-expanded="false" aria-controls="mobile-popover-menu">
-			<span>Main menu</span>
+			<span>Main menu</span> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
 		</button>
 		<div class="popover-menu" id="mobile-menu">
 			<div class="popover-menu__inner">

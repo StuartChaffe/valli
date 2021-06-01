@@ -1,0 +1,41 @@
+.review {
+	position: relative;
+	background: white;
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.10);
+	padding: 3rem 1.5rem;
+	margin-bottom: 3rem;
+	@include mq(medium) {
+		padding: var(--spacing-xxl) 6rem;
+	}
+
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+	.icon {
+		position: absolute;
+		width: 19px;
+		height: 15px;
+		@include mq(medium) {
+			width: 41px;
+			height: 33px;
+		}
+	}
+
+	.icon--quote {
+		left: 1rem;
+		top: 1rem;
+		@include mq(medium) {
+			left: var(--spacing-l);
+			top: var(--spacing-l);
+		}
+	}
+	.icon--quote-end {
+		right: 1rem;
+		bottom: 1rem;
+		transform: rotate(180deg);
+		@include mq(medium) {
+			right: var(--spacing-l);
+			bottom: var(--spacing-l);
+		}
+	}
+}

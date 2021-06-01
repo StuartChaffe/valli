@@ -13,8 +13,12 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	padding-bottom: 1rem;
+	@include mq(medium) {
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
 }
 .global-header__top {
 	display: flex;
@@ -67,7 +71,7 @@
 		flex-basis: 100%;
 		display: flex;
 		justify-content: center;
-		margin: 2rem 0;
+		margin: 2rem 0px 1rem 0;
 	}
 }
 
