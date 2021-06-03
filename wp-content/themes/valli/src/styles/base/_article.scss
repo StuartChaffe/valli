@@ -28,7 +28,7 @@ article {
 		@include mq(medium) {
 			flex: 0 0 320px;
 			margin-right: 100px;
-			display: flex;
+			display: block;
 		}
 
 		h2, h3, h4, h5 {

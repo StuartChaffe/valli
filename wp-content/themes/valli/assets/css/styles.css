@@ -477,7 +477,7 @@ article aside {
   article aside {
     flex: 0 0 320px;
     margin-right: 100px;
-    display: flex;
+    display: block;
   }
 }
 article aside h2, article aside h3, article aside h4, article aside h5 {
