@@ -454,14 +454,16 @@ article {
   margin: 0 auto;
   width: 100%;
   max-width: var(--container-width);
-  padding: var(--spacing-xxl) 1em;
+  padding: var(--spacing-l) 1em;
 }
 @media (min-width: 50em) {
   article {
     flex-direction: row;
+    padding: var(--spacing-xxl) 1em;
   }
 }
 article aside {
+  display: none;
   background: white;
   flex: 0 0 100%;
   width: 100%;
@@ -475,6 +477,7 @@ article aside {
   article aside {
     flex: 0 0 320px;
     margin-right: 100px;
+    display: flex;
   }
 }
 article aside h2, article aside h3, article aside h4, article aside h5 {
@@ -503,6 +506,28 @@ article aside .aside-filter__selected a {
 }
 article main {
   flex: 1 1 auto;
+}
+article main .mobile-menu {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+article main .mobile-menu__nav {
+  padding: 0;
+}
+article main .mobile-nav__btn {
+  margin-top: 0;
+  transform: translateY(0);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+article main .popover-menu {
+  top: calc(100% - 5px);
+  width: 100%;
+  left: 0;
+  background-color: var(--color-primary-light);
+}
+article main .popover-nav a {
+  color: var(--color-primary-dark);
 }
 article main h2, article main h3 {
   color: var(--color-black);
@@ -946,8 +971,8 @@ article main .btn {
 .popover-menu {
   position: absolute;
   top: calc(100% + 1.5rem);
-  left: var(--spacing-xl);
-  width: calc(100% - 70px);
+  left: 1em;
+  width: calc(100% - 2em);
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   padding: 0;
@@ -1044,7 +1069,7 @@ article main .btn {
 .mobile-menu__nav {
   position: relative;
   width: 100%;
-  padding: 0 var(--spacing-xl);
+  padding: 0 1em;
 }
 
 .mobile-menu__item {
@@ -1353,6 +1378,14 @@ article main .btn {
 }
 .banner--dark h1, .banner--dark h2, .banner--dark h3, .banner--dark h4, .banner--dark h5, .banner--dark p {
   color: white;
+}
+.banner__inner {
+  padding: 0 0;
+}
+@media (min-width: 50em) {
+  .banner__inner {
+    padding: 0 1em;
+  }
 }
 .banner__content {
   display: flex;

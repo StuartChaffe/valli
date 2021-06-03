@@ -16,6 +16,10 @@
 	}
 	&__inner {
 		@extend .container;
+		padding: 0 0;
+		@include mq(medium) {
+			padding: 0 1em;
+		}
 	}
 	&__content {
 		display: flex;

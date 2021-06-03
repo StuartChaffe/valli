@@ -8,12 +8,14 @@ article {
 	margin: 0 auto;
 	width: 100%;
 	max-width: var(--container-width);
-	padding: var(--spacing-xxl) 1em;
+	padding: var(--spacing-l) 1em;
 	@include mq(medium) {
 		flex-direction: row;
+		padding: var(--spacing-xxl) 1em;
 	}
 
 	aside {
+		display: none;
 		background: white;
 		flex: 0 0 100%;
 		width: 100%;
@@ -26,6 +28,7 @@ article {
 		@include mq(medium) {
 			flex: 0 0 320px;
 			margin-right: 100px;
+			display: flex;
 		}
 
 		h2, h3, h4, h5 {
@@ -60,6 +63,29 @@ article {
 	}
 	main {
 		flex: 1 1 auto;
+
+		.mobile-menu {
+			margin-top: 0;
+			margin-bottom: 2rem;
+		}
+		.mobile-menu__nav {
+			padding: 0;
+		}
+		.mobile-nav__btn {
+			margin-top: 0;
+			transform: translateY(0);
+			background-color: var(--color-primary-light);
+			color: var(--color-primary-dark);
+		}
+		.popover-menu {
+			top: calc(100% - 5px);
+			width: 100%;
+			left: 0;
+			background-color: var(--color-primary-light);
+		}
+		.popover-nav a {
+			color: var(--color-primary-dark);
+		}
 
 		h2, h3{
 			color: var(--color-black);

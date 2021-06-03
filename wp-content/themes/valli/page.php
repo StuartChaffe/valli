@@ -50,6 +50,37 @@
 			</ul>
 		</aside>
 		<main>
+			<div class="mobile-menu">
+				<nav class="mobile-menu__nav">
+					<button class="mobile-nav__btn" data-toggle="#mobile-menus" data-toggle-body-class="popover-active" aria-label="Toggle Menu" aria-expanded="false">
+						<span>About Valli</span> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+					</button>
+					<div class="popover-menu" id="mobile-menus">
+						<div class="popover-menu__inner">
+							<?php
+								wp_nav_menu(array(
+								'theme_location' => 'primary',
+								'container' => 'nav',
+								'container_class' => 'popover-menu__nav',
+								'menu_class' => 'popover-nav'
+							));
+							?>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="popover-menu" id="mobile-menu">
+				<div class="popover-menu__inner">
+					<?php
+						wp_nav_menu(array(
+						'theme_location' => 'primary',
+						'container' => 'nav',
+						'container_class' => 'popover-menu__nav',
+						'menu_class' => 'popover-nav'
+					));
+					?>
+				</div>
+			</div>
 			<h2>About Valli Group</h2>
 
 

@@ -32,9 +32,9 @@ body.popover-active {
 .popover-menu {
 	position: absolute;
 	top: calc(100% + 1.5rem);
-	left: var(--spacing-xl);
+	left: 1em;
 	// height: calc(100% - 80px);
-	width: calc(100% - 70px);
+	width: calc(100% - 2em);
 	overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
 	padding: 0;
@@ -127,7 +127,7 @@ body.popover-active {
 .mobile-menu__nav {
 	position: relative;
 	width: 100%;
-	padding: 0 var(--spacing-xl);
+	padding: 0 1em;
 }
 .mobile-menu__item {
 	position: relative;
