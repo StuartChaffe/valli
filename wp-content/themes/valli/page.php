@@ -51,16 +51,36 @@
 		</aside>
 		<main>
 			<h2>About Valli Group</h2>
+
+
 			<img class="alignright" src="<?php echo get_template_directory_uri(); ?>/assets/images/samples/about.png')" alt="about" />
 			<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum dui eget sapien auctor venenatis. Quisque laoreet sem nec magna pellentesque venenatis.</strong></p>
 			<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum aliquam leo sed eros dictum, maximus placerat ante semper. Nulla laoreet convallis nibh a consectetur.</p>
 			<a href="" class="btn btn--primary btn--small">Read more about Valli group</a>
+
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/samples/about-large.png')" alt="about" />
+			<p><strong>We really care about your eyes. That’s why we aim to make our appointments longer and more frequent than most and invest in the latest technology to provide the very best in eye care.</strong></p>
+			<p>Our eye tests take up to 45 minutes and offer a comprehensive examination of your eyes, vision and general health. They are tailored to your individual needs and as well as checking your vision can identify other health conditions including the early onset of:</p>
+			<ul>
+				<li>Diabetes</li>
+				<li>High cholesterol and blood pressure</li>
+				<li>MS</li>
+				<li>Alzheimer’s</li>
+				<li>Glaucoma</li>
+				<li>Cataracts</li>
+				<li>Age-related Macular Degeneration</li>
+			</ul>
+			<p>We are able to offer a full eye scan using the latest OCT (Optical Coherence Tomographer). This allows us to see all the layers of the eye and can detect certain eye conditions and health issues before symptoms are even present.  Please ask for more details when booking an appointment.</p>
+			<p>We are registered to provide NHS occular emergency appointments for sudden new problems with your eyes for example red eye, sudden vision change, itchy eyes, sore eyes and all manner of eye conditions. These appointments are free of charge through the NHS.</p>
+			<p>To book an appointment or find out more please <a href="">contact us</a>.</p>
 
 			<hr />
 
 			<h3 class="heading-2">Reviews</h3>
 			<?php include("blocks/review.php"); ?>
 			<a href="" class="btn btn--primary btn--small">Read more reviews</a>
+
+			<?php include("blocks/ad.php"); ?>
 
 			<hr />
 
@@ -71,8 +91,15 @@
 
 			<h3 class="heading-2">Meet the team</h3>
 			<?php include("blocks/team.php"); ?>
+
+			<hr />
+
+			<h3 class="heading-2">Frequently Asked Questions</h3>
+			<?php include("blocks/accordion.php"); ?>
+
 		</main>
 	</article>
+	<?php include("blocks/brands.php"); ?>
 	<?php the_content(); ?>
 <?php endwhile; ?>
 

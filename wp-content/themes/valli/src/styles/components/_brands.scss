@@ -1,0 +1,15 @@
+.brands {
+	border-top: 1px solid var(--color-grey-light);
+	padding: var(--spacing-xxl) 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.slick-slide {
+		display: flex !important;
+		justify-content: center;
+	}
+	&-item {
+		padding: 0 1rem;
+	}
+}
