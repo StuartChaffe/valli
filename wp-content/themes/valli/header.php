@@ -11,7 +11,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="svg-sprite" style="height: 0; width: 0; position: absolute; visibility: hidden">
+<div id="svg-sprite" style="display: none;">
 <?php include get_theme_file_path('assets/svg/sprite.php'); ?>
 </div>
 
